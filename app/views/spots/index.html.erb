@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Parking spots listing</h1>
+<table>
+  <thead>
+  <tr>
+    <th>Spot number</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @spots.each do |spot| %>
+  <tr>
+    <td><%= spot.number %></td>
+    <td>temp</td>
+  </tr>
+    <% end %>
+  </tbody>
+</table>
+</body>
+</html>
