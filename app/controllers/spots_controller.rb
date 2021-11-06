@@ -7,4 +7,8 @@ class SpotsController < ApplicationController
   def index
     @spots = Spot.all
   end
+
+  def test
+
+  end
 end

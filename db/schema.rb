@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2021_11_03_205525) do
 
   create_table "spots", force: :cascade do |t|
     t.integer "number"
+    t.datetime "book_time"
   end
 
 end
