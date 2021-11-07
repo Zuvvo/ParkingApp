@@ -58,3 +58,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'slack-ruby-client'
 gem 'async-websocket', '~> 0.8.0'
+
+gem 'omniauth-slack'
