@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   def create
-    @user = User.find_or_create_by(full_name: auth_hash.bot_user_id, member_id: auth_hash.bot_user_id)
+    @user = User.find_or_create_by(full_name: auth_hash.bot_info.bot_user_id, member_id: auth_hash.bot_info.bot_user_id)
     #@user = User.find_or_create_by(full_name: auth_hash.info.name, member_id: auth_hash.info.user_id)
     session[:user_id] = @user.id
     redirect_to '/'
