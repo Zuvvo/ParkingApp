@@ -56,7 +56,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'slack-ruby-client'
+gem 'omniauth-slack', '~> 2.3'
 gem 'async-websocket', '~> 0.8.0'
-
-gem 'omniauth-slack'
+gem 'omniauth-oauth2'
+gem 'figaro'
