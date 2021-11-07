@@ -5,5 +5,4 @@ Rails.application.routes.draw do
   resources :spots, only: [:show, :index]
 
   get '/auth/slack/callback', to: 'sessions#create'
-
 end

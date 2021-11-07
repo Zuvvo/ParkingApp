@@ -7,6 +7,8 @@ class SessionsController < ApplicationController
 
   protected
   def auth_hash
-    request.env['omniauth.auth']
+    user_info = request.env['omniauth.auth']
+    puts user_info
+    user_info
   end
 end
