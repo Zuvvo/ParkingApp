@@ -5,8 +5,9 @@
     <title>Title</title>
 </head>
 <body>
+<div class="p-3 mb-2 bg-dark text-white">
 <h1>Parking spots listing</h1>
-<table>
+<table class="table table-light">
   <thead>
   <tr>
     <th>Spot number</th>
@@ -18,10 +19,13 @@
   <% @spots.each do |spot| %>
     <tr>
       <td><%= spot.number %></td>
-      <td>temp</td>
+      <td><%= spot.book_time %></td>
+      <td><%= link_to "BOOK", { :controller =>  :spots, :action => :index }, class: "btn btn-secondary" %></td>
     </tr>
   <% end %>
   </tbody>
 </table>
+<a href="../" class="btn btn-primary my-2">Back</a>
+</div>
 </body>
 </html>
